@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light lamb</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-wrapper">
+        <h1 class="head">Light Lamb</h1>
+        <nav>
+          <a href="">Latest</a>
+          <a href="">Modern</a>
+          <a href="">Contemparay</a>
+          <a href="">Affordoble</a>
+        </nav>
+        <button type="button" id="toggle"><span></span></button>
+      </header>
+    </div>
+    <div class="container">
+      <div class="lamp-container">
+        <img src="./img/lamp.png" alt="" class="lamp" />
+        <img src="./img/light.png" alt="" class="light" id="light" />
+      </div>
+    </div>
+    <div class="text-wrapper">
+      <h1>Latest</h1>
+      <h1>and lighting</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <span
+          >Consequuntur beatae quam hic fugiat ut deleniti culpa accusantium ab
+          numquam architecto.</span
+        >
+      </p>
+      <span class="check my-5">Check my all collection</span>
+    </div>
+    <script>
+      const changeBtn = document.getElementById("toggle");
+      const light = document.getElementById("light");
+
+      function toggleClass() {
+        changeBtn.classList.toggle("active");
+        light.classList.toggle("on");
+      }
+
+      changeBtn.addEventListener("click", toggleClass);
+    </script>
+  </body>
+</html>
